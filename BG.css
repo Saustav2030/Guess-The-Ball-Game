@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #70e84b 0%, #e031f4 100%);
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;  /* Reduced from 20px */
+    padding-bottom: 40px;  /* Added padding to move everything up */
+}
+
+#container{
+    margin-top: 0;  /* Remove the extra margin */
+    height: 85%;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.neon-title {
+    font-size: 3.5rem;
+    background-color: rgb(226, 226, 226);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    animation: gradient-shift 3s ease infinite;
+    background-size: 200% auto;
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#container{
+    height: 85%;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#container-top{
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 80px;
+}
+
+#container-top .elem{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+    text-align: center;
+
+}
+#container-top .elem h2{
+    font-size: 2vw;
+    padding-top: 5px;
+   
+
+}
+
+
+
+#container-top .elem .box{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    color: #1a237e;
+    padding: 10px 15px;
+    font-size: 1.5vw;
+    border-radius: 50%;
+    font-weight: 700;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+#container-top .elem .box:hover {
+    transform: scale(1.05);
+}
+
+#container-btm{
+    height: calc(100% - 70px);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    align-content: flex-start;
+    justify-content: space-evenly;
+}
+
+.circle{
+    height: 35px;
+    width: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    margin: 3px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.4vw;
+    color: white;
+    background: linear-gradient(145deg, #957272, #283037);
+    box-shadow: 0 4px 15px rgba(164, 164, 164, 0.3);
+    transition: all 0.3s ease;
+}
+
+.circle:hover{
+    background: linear-gradient(145deg, #ee5253, #ff4757);
+    transform: scale(1.05);
+}
+
+
+#container {
+    margin-top: 20px;
+}
